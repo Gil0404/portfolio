@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
     <main className="flex flex-col gap-8 row-start-2 items-center bg-teal-950 h-screen w-screen sm:items-start">
@@ -11,6 +9,7 @@ export default function Home() {
               className="w-full h-fit object-cover rounded-full border-2 border-slate-400 aspect-square"
               alt="Profile"
             />
+            <h1 className="font-heading font-extrabold "></h1>
           </div>
         </div>
         <div className="flex w-3/4 h-screen bg-red-50"></div>
