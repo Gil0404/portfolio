@@ -18,6 +18,9 @@ const config: Config = {
         heading: ["Righteous", "sans-serif"],
         body: ["Noto Sans", "sans-serif"],
       },
+      maxWidth: {
+        normal: "110rem",
+      },
     },
   },
   plugins: [],
