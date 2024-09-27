@@ -1,7 +1,3 @@
-"use client";
-
-let w = Math.round(window.innerWidth / 64);
-let h = Math.round(window.innerHeight / 64);
 
 export default function Hero() {
   return (
