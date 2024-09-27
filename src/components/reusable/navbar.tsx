@@ -12,16 +12,16 @@ export default function Navbar() {
   const currentpath = usePathname();
   return (
     <>
-      <div className=" fixed w-screen h-16 bg-white md:flex sm:hidden">
-        <div className="px-10 justify-end items-center flex w-screen max-w-normal h-full bg-yellow-300 mx-auto gap-6">
+      <div className=" fixed w-screen h-16 bg-main md:flex sm:hidden">
+        <div className="px-10 justify-end items-center flex w-screen max-w-normal h-full bg-main mx-auto gap-6">
           {navitem.map((links, index) => {
             return (
               <Link
                 href={links.path}
                 className={`${
                   links.path === currentpath &&
-                  "text-main  border-main border-b-2"
-                } hover:text-main  capitalize font-extrabold text-xl p-2`}
+                  "text-buttons    border-buttons border-b-2  "
+                } hover:text-buttons hover:underline-offset-8  capitalize font-extrabold text-xl p-2 text-background`}
               >
                 {links.name}
               </Link>

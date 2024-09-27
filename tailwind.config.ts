@@ -1,3 +1,4 @@
+import { button } from "framer-motion/client";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -10,13 +11,13 @@ const config: Config = {
     extend: {
       colors: {
         background: "#FFFFFF",
-        main: "#003366",
-        buttons: "#008080",
-        actions: "#E0E0E0",
+        buttons: "#101010",
+        main: "#6339b3",
+        actions: "#6B6B6B",
       },
       fontFamily: {
-        heading: ["Righteous", "sans-serif"],
-        body: ["Noto Sans", "sans-serif"],
+        lato: ["Lato", "sans-serif"],
+        Fredoka: ["Fredoka", "sans-serif"],
       },
       maxWidth: {
         normal: "110rem",
