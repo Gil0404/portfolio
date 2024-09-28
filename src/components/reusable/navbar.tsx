@@ -13,7 +13,7 @@ export default function Navbar() {
   const currentpath = usePathname();
   return (
     <>
-      <div className=" fixed w-screen h-16 bg-high md:flex sm:hidden shadow-md">
+      <div className=" fixed w-screen h-16 bg-high md:flex sm:hidden shadow-md z-50">
         <div className="px-10 justify-end items-center flex w-screen max-w-normal h-full bg-high mx-auto gap-6">
           {navitem.map((links, index) => {
             return (
@@ -34,7 +34,7 @@ export default function Navbar() {
 
       {/* mobile */}
 
-      <div className=" fixed w-screen h-screen  md:hidden sm:flex">
+      <div className=" fixed w-screen h-screen  md:hidden sm:flex z-50">
         <div className="px-10 flex-col  justify-center items-center flex w-screen max-w-normal h-full mx-auto gap-6">
           {navitem.map((links, index) => {
             return (
@@ -43,8 +43,8 @@ export default function Navbar() {
                 href={links.path}
                 className={`${
                   links.path === currentpath &&
-                  "text-dark  border-dark border-b-2"
-                } hover:text-dark  capitalize font-extrabold text-xl p-2`}
+                  "text-high  border-high border-b-2"
+                } hover:text-high  capitalize font-extrabold text-xl p-2`}
               >
                 {links.name}
               </Link>

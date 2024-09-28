@@ -9,7 +9,11 @@ export default function Home() {
       <div className="md:pt-16 pt-16 sm:pt-0 ">
         <Hero></Hero>
 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          className=" translate-y-2 -z-50"
+        >
           <path
             fill="#7e59e2"
             fill-opacity="1"
