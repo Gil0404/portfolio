@@ -1,4 +1,5 @@
 "use client";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -12,16 +13,17 @@ export default function Navbar() {
   const currentpath = usePathname();
   return (
     <>
-      <div className=" fixed w-screen h-16 bg-main md:flex sm:hidden">
-        <div className="px-10 justify-end items-center flex w-screen max-w-normal h-full bg-main mx-auto gap-6">
+      <div className=" fixed w-screen h-16 bg-high md:flex sm:hidden shadow-md">
+        <div className="px-10 justify-end items-center flex w-screen max-w-normal h-full bg-high mx-auto gap-6">
           {navitem.map((links, index) => {
             return (
               <Link
+                key={index}
                 href={links.path}
                 className={`${
                   links.path === currentpath &&
-                  "text-buttons    border-buttons border-b-2  "
-                } hover:text-buttons hover:underline-offset-8  capitalize font-extrabold text-xl p-2 text-background`}
+                  "text-dark    border-dark  border-b-2  "
+                } hover:text-dark hover:underline-offset-8  capitalize font-extrabold text-xl p-2 text-background`}
               >
                 {links.name}
               </Link>
@@ -37,11 +39,12 @@ export default function Navbar() {
           {navitem.map((links, index) => {
             return (
               <Link
+                key={index}
                 href={links.path}
                 className={`${
                   links.path === currentpath &&
-                  "text-main  border-main border-b-2"
-                } hover:text-main  capitalize font-extrabold text-xl p-2`}
+                  "text-dark  border-dark border-b-2"
+                } hover:text-dark  capitalize font-extrabold text-xl p-2`}
               >
                 {links.name}
               </Link>

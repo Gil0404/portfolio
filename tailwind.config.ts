@@ -11,9 +11,10 @@ const config: Config = {
     extend: {
       colors: {
         background: "#FFFFFF",
-        buttons: "#101010",
-        main: "#6339b3",
-        actions: "#6B6B6B",
+        mid: "#7450d6",
+        high: "#7e59e2",
+        light: "#8964ec",
+        dark: "#101010",
       },
       fontFamily: {
         lato: ["Lato", "sans-serif"],
@@ -22,6 +23,9 @@ const config: Config = {
       maxWidth: {
         normal: "110rem",
       },
+      // backgroundImage: {
+      //   "hero-pattern": "url(/public/trs.png)",
+      // },
     },
   },
   plugins: [],
