@@ -26,6 +26,10 @@ const config: Config = {
       // backgroundImage: {
       //   "hero-pattern": "url(/public/trs.png)",
       // },
+
+      screens: {
+        sm: "375px",
+      },
     },
   },
   plugins: [],

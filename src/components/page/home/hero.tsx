@@ -2,7 +2,7 @@ import Socials from "@/components/reusable/socials";
 
 export default function Hero() {
   return (
-    <div className=" flex flex-row w-screen max-w-normal h-screen bg-background mx-auto">
+    <div className=" flex md:flex-row  sm:flex-col w-screen max-w-normal h-screen bg-background mx-auto">
       <div className="flex flex-col w-2/3 h-full  justify-center items-center">
         <div className="text-left text-dark">
           <h1 className="text-dark  font-Fredoka font-extrabold text-5xl">
@@ -18,7 +18,7 @@ export default function Hero() {
       </div>
       <div className="flex flex-col h-full w-1/3 justify-center items-center">
         <h1 className="text-dark  font-lato font-extrabold text-5xl">
-          <span className="text-main">I'm</span> GILBERT D GARCIA{" "}
+          <span className="text-main">I'm</span> GILBERT{" "}
         </h1>
       </div>
     </div>
