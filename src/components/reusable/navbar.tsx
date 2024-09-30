@@ -5,8 +5,8 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const navitem = [
-  { name: "home", path: "/" },
-  { name: "about", path: "/about" },
+  { name: "home", path: "#home" },
+  { name: "about", path: "#about" },
   { name: "projects", path: "/projects" },
   { name: "resume", path: "/resume" },
 ];
