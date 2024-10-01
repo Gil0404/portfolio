@@ -1,6 +1,7 @@
 import Hero from "@/components/page/home/hero";
 import Navbar from "@/components/reusable/navbar";
-import divider from "@/app/img/divider.svg";
+import divider from "@/app/img/div2.svg";
+import About from "@/components/page/home/about";
 export default function Home() {
   return (
     <div className="w-screen">
@@ -18,7 +19,9 @@ export default function Home() {
         ></div>
       </div>
       {/* about */}
-      <div className="w-screen bg-high h-screen" id="about"></div>
+      <div className="w-screen bg-high min-h-normalh" id="about">
+        <About></About>
+      </div>
     </div>
   );
 }

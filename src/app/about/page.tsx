@@ -1,7 +1,7 @@
 import Hero from "@/components/page/home/hero";
 import Navbar from "@/components/reusable/navbar";
 
-export default function About() {
+export default function d() {
   return (
     <div>
       <Navbar></Navbar>
