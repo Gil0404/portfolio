@@ -6,8 +6,8 @@ import { useState } from "react";
 import Icons from "@/app/img/gg.svg";
 const navitem = [
   { name: "home", path: "#home" },
+  { name: "projects", path: "#projects" },
   { name: "about", path: "#about" },
-  { name: "projects", path: "/projects" },
   { name: "resume", path: "/resume" },
 ];
 
