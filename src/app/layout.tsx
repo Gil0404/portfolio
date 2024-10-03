@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import bg from "@/app/img/jigsaw.svg";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -14,7 +14,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-Fredoka overflow-x-hidden">{children}</body>
+      <body
+        className="font-Fredoka overflow-x-hidden"
+        style={{
+          backgroundImage: `url('${bg.src}')`,
+          // backgroundRepeat: "no-repeat",
+          // backgroundSize: "cover",
+
+          aspectRatio: "initial",
+        }}
+      >
+        {children}
+        <div className="w-screen h-screen "></div>
+      </body>
     </html>
   );
 }

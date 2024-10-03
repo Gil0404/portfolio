@@ -19,8 +19,10 @@ export default function Home() {
           }}
         ></div>
       </div>
-      {/* about */}
-      <div className="w-screen bg-high min-h-normalh" id="projects">
+      <div
+        className="w-screen bg-high min-h-normalh scroll-m-16 snap-y"
+        id="projects"
+      >
         <HomeProject></HomeProject>
       </div>
     </div>
