@@ -16,13 +16,13 @@ export default function RootLayout({
     <html lang="en">
       <body
         className="font-Fredoka overflow-x-hidden"
-        style={{
-          backgroundImage: `url('${bg.src}')`,
-          // backgroundRepeat: "no-repeat",
-          // backgroundSize: "cover",
+        // style={{
+        //   backgroundImage: `url('${bg.src}')`,
+        //   // backgroundRepeat: "no-repeat",
+        //   // backgroundSize: "cover",
 
-          aspectRatio: "initial",
-        }}
+        //   aspectRatio: "initial",
+        // }}
       >
         {children}
         <div className="w-screen h-screen "></div>

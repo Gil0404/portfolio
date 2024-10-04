@@ -11,7 +11,7 @@ export default function Home() {
         <Hero></Hero>
 
         <div
-          className="w-screen h-96"
+          className="w-screen h-96 translate-y-1 "
           style={{
             backgroundImage: `url('${divider.src}')`,
             backgroundRepeat: "no-repeat",
@@ -25,6 +25,16 @@ export default function Home() {
       >
         <HomeProject></HomeProject>
       </div>
+
+      <div
+        className="w-screen h-96 translate-y-1"
+        style={{
+          backgroundImage: `url('${divider.src}')`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          rotate: "180deg",
+        }}
+      ></div>
     </div>
   );
 }
