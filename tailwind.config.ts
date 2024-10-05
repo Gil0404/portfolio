@@ -60,6 +60,9 @@ const config: Config = {
       minHeight: {
         normalh: "900px",
       },
+      height: {
+        normalh: "900px",
+      },
     },
   },
   plugins: [],
