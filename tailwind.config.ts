@@ -34,6 +34,10 @@ const config: Config = {
           "0%": { transform: "translateX(900px)" },
           "100%": { transform: "translateX(0)" },
         },
+        slideout: {
+          "0%": { transform: "translateX(0)", opacity: "1" },
+          "100%": { transform: "translateX(900px)", opacity: "0" },
+        },
         blob: {
           "0% , 100%": {
             "border-radius": " 65% 35% 42% 48% / 40% 66% 25% 52%;",
@@ -52,6 +56,7 @@ const config: Config = {
 
       animation: {
         slidein: "slidein .5s ease-in-out ",
+        slideout: "slideout .5s ease-in-out ",
         blob: "blob 8s ease-in-out infinite ",
       },
       dropShadow: {
