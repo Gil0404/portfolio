@@ -34,21 +34,31 @@ function Cards({ title, img, set }: projectType) {
   };
   return (
     <div
-      className={` w-full min-h-normalh bg-green-700 flex ${
+      className={` w-full min-h-full p-7 bg-background rounded-[35px] flex  drop-shadow-md ${
         set % 2 ? "flex-row" : "flex-row-reverse"
       } `}
     >
       <div
         ref={viewref}
         style={set % 2 ? style1 : style2}
-        className="w-1/2 h-normalh bg-fuchsia-300"
+        className="w-1/2 h-full bg-high rounded-[45px]"
       >
-        img
+        <div
+          className="w-1/2 h-1/4  rounded-br-[45px] delay-75  flex justify-center items-center"
+          style={{
+            backgroundImage: `url("https://cdn.prod.website-files.com/66e3df8d47eb3991ca9dbef7/66f257dcb7e01b8ca88410bc_Top%20Left.svg")`,
+            backgroundSize: "cover",
+          }}
+        >
+          <h1 className="text-high font-extrabold text-[2vw]  uppercase">
+            Eventure
+          </h1>
+        </div>
       </div>
       <div
         ref={viewref}
         style={set % 2 ? style2 : style1}
-        className="w-1/2 h-normalh bg-blue-300"
+        className="w-1/2 h-full bg-background"
       >
         title
       </div>
@@ -84,7 +94,7 @@ export default function ProjectsCard() {
     },
   ];
   return (
-    <div className=" flex flex-col max-w-normal min-h-normalh gap-3 bg-yellow-300 p-4 overflow-x-hidden ">
+    <div className=" flex flex-col max-w-normal h-normalh gap-4 bg-white p-4 overflow-x-hidden overflow-y-scroll -scroll-m-7 scroll-smooth rounded-3xl">
       {project.map((projects, index) => {
         return (
           <Cards

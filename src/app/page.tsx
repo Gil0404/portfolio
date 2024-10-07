@@ -10,23 +10,23 @@ export default function Home() {
       <div className="md:pt-16 pt-16 sm:pt-0 ">
         <Hero></Hero>
 
-        <div
+        {/* <div
           className="w-screen h-96 translate-y-1 "
           style={{
             backgroundImage: `url('${divider.src}')`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
           }}
-        ></div>
+        ></div> */}
       </div>
       <div
-        className="w-screen bg-high min-h-normalh scroll-m-16 snap-y"
+        className="w-screen bg-white min-h-normalh scroll-m-16 snap-y "
         id="projects"
       >
         <HomeProject></HomeProject>
       </div>
 
-      <div
+      {/* <div
         className="w-screen h-96 translate-y-1"
         style={{
           backgroundImage: `url('${divider.src}')`,
@@ -34,7 +34,7 @@ export default function Home() {
           backgroundSize: "cover",
           rotate: "180deg",
         }}
-      ></div>
+      ></div> */}
     </div>
   );
 }
