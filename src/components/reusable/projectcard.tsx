@@ -34,7 +34,7 @@ function Cards({ title, img, set }: projectType) {
   };
   return (
     <div
-      className={` w-full min-h-full p-7 bg-background rounded-[35px] flex  drop-shadow-md ${
+      className={` w-full min-h-full p-7 bg-background rounded-[35px] flex snap-start snap-always drop-shadow-md ${
         set % 2 ? "flex-row" : "flex-row-reverse"
       } `}
     >
@@ -44,23 +44,25 @@ function Cards({ title, img, set }: projectType) {
         className="w-1/2 h-full bg-high rounded-[45px]"
       >
         <div
-          className="w-1/2 h-1/4  rounded-br-[45px] delay-75  flex justify-center items-center"
+          className="w-1/2 h-1/4  rounded-br-[45px] delay-75  flex justify-center items-center pr-16"
           style={{
             backgroundImage: `url("https://cdn.prod.website-files.com/66e3df8d47eb3991ca9dbef7/66f257dcb7e01b8ca88410bc_Top%20Left.svg")`,
             backgroundSize: "cover",
           }}
         >
-          <h1 className="text-high font-extrabold text-[2vw]  uppercase">
-            Eventure
+          <h1 className="text-high font-extrabold text-[1.5vw] text-wrap  uppercase">
+            Eventure asdasd
           </h1>
         </div>
       </div>
       <div
         ref={viewref}
         style={set % 2 ? style2 : style1}
-        className="w-1/2 h-full bg-background"
+        className="w-1/2 h-full justify-center items-center flex text-4xl text-wrap p-4"
       >
-        title
+        <h1>
+          Eveasjudhasdjasjdajsdj asdjasjdjasdja sjdjasjdja sjdajajsja sdjas
+        </h1>
       </div>
     </div>
   );
@@ -94,7 +96,7 @@ export default function ProjectsCard() {
     },
   ];
   return (
-    <div className=" flex flex-col max-w-normal h-normalh gap-4 bg-white p-4 overflow-x-hidden overflow-y-scroll -scroll-m-7 scroll-smooth rounded-3xl">
+    <div className=" flex flex-col max-w-normal h-normalh gap-4 bg-white p-4 overflow-x-hidden overflow-y-scroll -scroll-m-7 scroll-smooth rounded-[50px] snap-y snap-mandatory ">
       {project.map((projects, index) => {
         return (
           <Cards
