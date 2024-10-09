@@ -34,7 +34,7 @@ function Cards({ title, img, set }: projectType) {
   };
   return (
     <div
-      className={` w-full min-h-full p-7 bg-background rounded-[35px] flex snap-start snap-always drop-shadow-md ${
+      className={` w-full min-h-full p-7 bg-background rounded-[35px] flex snap-center snap-always drop-shadow-md ${
         set % 2 ? "flex-row" : "flex-row-reverse"
       } `}
     >
