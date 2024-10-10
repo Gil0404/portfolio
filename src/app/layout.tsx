@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-// import bg from "@/app/img/jigsaw.svg";
+import bg from "@/app/img/jigsaw.svg";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className="font-Fredoka overflow-x-hidden "
+        className="font-Fredoka overflow-x-hidden scroll-smooth"
         // style={{
         //   backgroundImage: `url('${bg.src}')`,
         //   // backgroundRepeat: "no-repeat",
@@ -25,6 +25,7 @@ export default function RootLayout({
         // }}
       >
         {children}
+        <div className="w-screen h-screen "></div>
       </body>
     </html>
   );

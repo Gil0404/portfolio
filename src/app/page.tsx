@@ -5,9 +5,9 @@ import About from "@/components/page/home/about";
 import HomeProject from "@/components/page/home/projects";
 export default function Home() {
   return (
-    <section className="w-screen snap-y snap-mandatory overflow-x-hidden overflow-y-scroll h-screen ">
+    <section className="w-screen snap-y snap-mandatory overflow-x-hidden overflow-y-scroll h-screen scroll-smooth ">
       <Navbar></Navbar>
-      <div className="md:pt-16 pt-16 sm:pt-0  snap-center">
+      <div className="md:pt-16 pt-16 sm:pt-0  snap-center" id="home">
         <Hero></Hero>
       </div>
 
