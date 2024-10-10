@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className="font-Fredoka overflow-x-hidden"
+        className="font-Fredoka overflow-x-hidden "
         // style={{
         //   backgroundImage: `url('${bg.src}')`,
         //   // backgroundRepeat: "no-repeat",
@@ -25,7 +25,6 @@ export default function RootLayout({
         // }}
       >
         {children}
-        <div className="w-screen h-screen "></div>
       </body>
     </html>
   );

@@ -49,7 +49,7 @@ export default function Navbar() {
 
       {/* mobile */}
 
-      <div className=" fixed w-screen h-screen flex-col md:hidden z-50">
+      {/* <div className=" fixed w-screen  flex-col md:hidden z-50">
         <div
           className={`flex ${
             !navState ? "bg-high" : "bg-background"
@@ -105,7 +105,67 @@ export default function Navbar() {
             );
           })}
         </div>
+      </div> */}
+
+      <div className="w-screen min-h-10  bg-high sm:flex md:hidden justify-between items-center fixed z-50 ">
+        <div className=" items-center flex max-w-normal  ">
+          <img src={Icons.src} alt="" className="w-10 h-10" />
+        </div>
+        <button
+          className={` h-10 ${!navState ? "flex" : "hidden"} items-center px-4`}
+          onClick={navOpen}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="20"
+            height="20"
+            viewBox="0 0 50 50"
+          >
+            <path d="M 5 9 L 5 11 L 45 11 L 45 9 L 5 9 z M 5 24 L 5 26 L 45 26 L 45 24 L 5 24 z M 5 39 L 5 41 L 45 41 L 45 39 L 5 39 z"></path>
+          </svg>
+        </button>
       </div>
+      {navState ? (
+        <>
+          <div
+            className={`px-5 flex-col  h-screen fixed z-50  items-end animate-slidein md:hidden ${
+              navState ? "sm:flex" : "sm:hidden"
+            } bg-background w-screen max-w-normal h-full mx-auto gap-6`}
+            onClick={navClose}
+          >
+            <div className=" pt-2">
+              <button
+                className={` h-10  ${
+                  navState ? "flex" : "hidden"
+                } items-center px-4 text-xl`}
+                onClick={navClose}
+              >
+                x
+              </button>
+            </div>
+            <div className="flex flex-col items-center justify-center w-full h-5/6">
+              {navitem.map((links, index) => {
+                return (
+                  <Link
+                    key={index}
+                    href={links.path}
+                    className={`${
+                      links.path === currentpath &&
+                      "text-high  border-high border-b-2"
+                    } hover:text-high  capitalize font-extrabold text-xl p-2`}
+                  >
+                    {links.name}
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        </>
+      ) : (
+        <div></div>
+      )}
     </>
   );
 }

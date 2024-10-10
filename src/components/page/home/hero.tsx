@@ -3,7 +3,7 @@ import prof from "@/app/img/prof.jpg";
 
 export default function Hero() {
   return (
-    <div className=" flex md:flex-row  sm:flex-col w-screen max-w-normal min-h-normalh mx-auto md:justify-normal md:items-start sm:justify-center sm:items-center  ">
+    <div className=" flex md:flex-row  sm:flex-col w-screen max-w-normal min-h-normalh mx-auto md:justify-normal md:items-start sm:justify-center sm:items-center  p-5 ">
       <div className="flex flex-col w-1/2 h-full  justify-center items-center my-auto ">
         <div className="text-left text-dark md:text-left sm:text-center ">
           <h1 className="text-dark  font-Fredoka font-extrabold text-7xl sm:text-5xl">

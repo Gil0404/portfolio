@@ -5,28 +5,34 @@ import About from "@/components/page/home/about";
 import HomeProject from "@/components/page/home/projects";
 export default function Home() {
   return (
-    <div className="w-screen">
+    <section className="w-screen snap-y snap-mandatory overflow-x-hidden overflow-y-scroll h-screen ">
       <Navbar></Navbar>
-      <div className="md:pt-16 pt-16 sm:pt-0 ">
+      <div className="md:pt-16 pt-16 sm:pt-0  snap-center">
         <Hero></Hero>
-
-        {/* <div
-          className="w-screen h-96 translate-y-1 "
-          style={{
-            backgroundImage: `url('${divider.src}')`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-          }}
-        ></div> */}
       </div>
+      <div className="h-36 w-screen bg-high"></div>
       <div
-        className="w-screen bg-white min-h-normalh scroll-m-16 snap-y "
+        className=" scroll-m-16 w-screen bg-white min-h-normalh snap-center  "
         id="projects"
       >
         <HomeProject></HomeProject>
       </div>
+      <div
+        className="w-screen h-96 translate-y-1  "
+        style={{
+          backgroundImage: `url('${divider.src}')`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        }}
+      ></div>
+      <div
+        className="w-screen bg-high min-h-normalh scroll-m-16  snap-center"
+        id="about"
+      >
+        <About></About>
+      </div>
 
-      {/* <div
+      <div
         className="w-screen h-96 translate-y-1"
         style={{
           backgroundImage: `url('${divider.src}')`,
@@ -34,7 +40,7 @@ export default function Home() {
           backgroundSize: "cover",
           rotate: "180deg",
         }}
-      ></div> */}
-    </div>
+      ></div>
+    </section>
   );
 }
