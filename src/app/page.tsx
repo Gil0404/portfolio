@@ -10,7 +10,26 @@ export default function Home() {
       <div className="md:pt-16 pt-16 sm:pt-0  snap-center">
         <Hero></Hero>
       </div>
-      <div className="h-36 w-screen bg-high"></div>
+
+      <div
+        className="w-screen h-96 translate-y-1  "
+        style={{
+          backgroundImage: `url('${divider.src}')`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        }}
+      ></div>
+      <div className=" scroll-m-56 w-screen h-36 bg-high snap-start"></div>
+      <div
+        className="w-screen h-96 translate-y-1"
+        style={{
+          backgroundImage: `url('${divider.src}')`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          rotate: "180deg",
+        }}
+      ></div>
+
       <div
         className=" scroll-m-16 w-screen bg-white min-h-normalh snap-center  "
         id="projects"
