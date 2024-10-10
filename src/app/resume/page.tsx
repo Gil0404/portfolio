@@ -1,4 +1,4 @@
-import Hero from "@/components/page/home/hero";
+// import Hero from "@/components/page/home/hero";
 import Navbar from "@/components/reusable/navbar";
 
 export default function Resume() {

@@ -1,8 +1,7 @@
 "use client";
-import { db } from "@/lib/firebase/firebase";
-import { addDoc, collection, Firestore } from "firebase/firestore";
-import { inView, useInView } from "framer-motion";
-import { title } from "process";
+
+import { useInView } from "framer-motion";
+
 import { useRef } from "react";
 
 type projectType = { title: string; img: string; set: number };
@@ -42,7 +41,7 @@ function Cards({ title, img, set }: projectType) {
           // }}
         >
           <h1 className="text-background font-extrabold text-6xl text-wrap p-5 uppercase">
-            Eventure asdasd
+            {title}
           </h1>
         </div>
       </div>
@@ -51,9 +50,7 @@ function Cards({ title, img, set }: projectType) {
         style={set % 2 ? style2 : style1}
         className="w-1/2 h-full justify-center items-center flex text-4xl text-wrap p-4 text-center md:w-full sm:w-full"
       >
-        <h1>
-          Eveasjudhasdjasjdajsdj asdjasjdjasdja sjdjasjdja sjdajajsja sdjas
-        </h1>
+        <h1>{img}</h1>
       </div>
     </div>
   );

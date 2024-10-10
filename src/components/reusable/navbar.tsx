@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import Icons from "@/app/img/gg.svg";
 const navitem = [
@@ -13,7 +13,7 @@ const navitem = [
 
 export default function Navbar() {
   const currentpath = usePathname();
-  const route = useRouter();
+  // const route = useRouter();
   const [navState, setnavState] = useState(false);
   function navClose() {
     setnavState(false);
@@ -22,7 +22,6 @@ export default function Navbar() {
     setnavState(true);
   }
 
-  function router(e: {}) {}
   return (
     <>
       <div className=" fixed w-screen h-16 bg-high md:flex sm:hidden shadow-md p-10 z-50">
