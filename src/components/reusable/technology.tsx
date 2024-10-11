@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { animate, motion, useMotionValue, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import i1 from "@/app/img/icons/1.svg";
 import i2 from "@/app/img/icons/2.svg";
 import i3 from "@/app/img/icons/3.svg";
