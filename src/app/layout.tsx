@@ -25,7 +25,6 @@ export default function RootLayout({
         // }}
       >
         {children}
-        <div className="w-screen h-screen "></div>
       </body>
     </html>
   );

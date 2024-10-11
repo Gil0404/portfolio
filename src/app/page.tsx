@@ -3,6 +3,7 @@ import Navbar from "@/components/reusable/navbar";
 import divider from "@/app/img/div2.svg";
 import About from "@/components/page/home/about";
 import HomeProject from "@/components/page/home/projects";
+import Technology from "@/components/reusable/technology";
 export default function Home() {
   return (
     <section className="w-screen snap-y snap-mandatory overflow-x-hidden overflow-y-scroll h-screen scroll-smooth ">
@@ -19,7 +20,9 @@ export default function Home() {
           backgroundSize: "cover",
         }}
       ></div>
-      <div className=" scroll-m-56 w-screen h-36 bg-high snap-start"></div>
+      <div className=" scroll-m-96 w-screen h-56 bg-high snap-start">
+        <Technology></Technology>
+      </div>
       <div
         className="w-screen h-96 translate-y-1"
         style={{
