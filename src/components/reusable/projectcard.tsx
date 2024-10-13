@@ -60,7 +60,9 @@ function MobileCards({ title, img, set }: projectType) {
     <>
       <div className="flex flex-col min-h-[78vh] w-full bg-high snap-start rounded-[50px] overflow-hidden justify-end ">
         <div className="text-sm bg-mirror rounded-lg shadow-lg py-10 px-6 text-white">
-          <h1 className="text-lg uppercase font-extrabold ">{title}</h1>
+          <h1 className="text-lg uppercase font-extrabold ">
+            {title + img + set}
+          </h1>
           <p>
             asdasdasdasdasdasdas dasdasdasd asdas asd asd asd asd asd asd
             aswqeascas sdas d asd asd as das d asd asdqwd das
