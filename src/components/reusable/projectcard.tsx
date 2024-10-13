@@ -55,6 +55,21 @@ function Cards({ title, img, set }: projectType) {
     </div>
   );
 }
+function MobileCards({ title, img, set }: projectType) {
+  return (
+    <>
+      <div className="flex flex-col min-h-[78vh] w-full bg-high snap-start rounded-[50px] overflow-hidden justify-end ">
+        <div className="text-sm bg-mirror rounded-lg shadow-lg py-10 px-6 text-white">
+          <h1 className="text-lg uppercase font-extrabold ">{title}</h1>
+          <p>
+            asdasdasdasdasdasdas dasdasdasd asdas asd asd asd asd asd asd
+            aswqeascas sdas d asd asd as das d asd asdqwd das
+          </p>
+        </div>
+      </div>
+    </>
+  );
+}
 
 export default function ProjectsCard() {
   const project = [
@@ -84,17 +99,32 @@ export default function ProjectsCard() {
     },
   ];
   return (
-    <div className=" flex flex-col max-w-normal h-normalh gap-4 bg-white p-2 overflow-x-hidden overflow-y-scroll -scroll-m-7 scroll-smooth rounded-[50px] snap-y snap-mandatory  ">
-      {project.map((projects, index) => {
-        return (
-          <Cards
-            title={projects.title}
-            img={projects.img}
-            key={index}
-            set={index}
-          ></Cards>
-        );
-      })}
-    </div>
+    <>
+      <div className="  flex-col max-w-normal h-normalh gap-4 bg-white p-2 overflow-x-hidden overflow-y-scroll -scroll-m-7 scroll-smooth rounded-[50px] snap-y snap-mandatory sm:hidden md:flex xl:flex">
+        {project.map((projects, index) => {
+          return (
+            <Cards
+              title={projects.title}
+              img={projects.img}
+              key={index}
+              set={index}
+            ></Cards>
+          );
+        })}
+      </div>
+
+      <div className=" flex-col max-w-normal h-[80vh] gap-4 bg-white p-2 overflow-x-hidden overflow-y-scroll -scroll-m-7 scroll-smooth rounded-[50px] snap-y snap-mandatory sm:flex md:hidden xl:hidden">
+        {project.map((projects, index) => {
+          return (
+            <MobileCards
+              title={projects.title}
+              img={projects.img}
+              set={index}
+              key={index}
+            ></MobileCards>
+          );
+        })}
+      </div>
+    </>
   );
 }

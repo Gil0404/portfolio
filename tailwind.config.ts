@@ -14,6 +14,7 @@ const config: Config = {
         high: "#7e59e2",
         light: "#8964ec",
         dark: "#101010",
+        mirror: "rgba(11, 11, 11, 0.26)",
       },
       fontFamily: {
         lato: ["Lato", "sans-serif"],
@@ -27,7 +28,7 @@ const config: Config = {
       // },
 
       screens: {
-        sm: "375px",
+        sm: "240px",
       },
       keyframes: {
         slidein: {

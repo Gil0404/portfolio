@@ -20,7 +20,7 @@ export default function Home() {
           backgroundSize: "cover",
         }}
       ></div>
-      <div className=" scroll-m-96 w-screen h-56 bg-high snap-start">
+      <div className=" flex  items-center scroll-m-96 w-screen h-56 bg-high snap-start md:h-56 sm:h-32">
         <Technology></Technology>
       </div>
       <div
@@ -34,7 +34,7 @@ export default function Home() {
       ></div>
 
       <div
-        className=" scroll-m-16 w-screen bg-white min-h-normalh snap-center  "
+        className=" scroll-m-16 w-screen bg-white min-h-normalh snap-center sm:min-h-screen"
         id="projects"
       >
         <HomeProject></HomeProject>
