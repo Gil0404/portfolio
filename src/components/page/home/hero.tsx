@@ -9,9 +9,9 @@ export default function Hero() {
           <h1 className="text-dark  font-Fredoka font-extrabold text-7xl sm:text-5xl">
             Hey There! I’m <span className="text-high font-extrabold">GIL</span>
           </h1>
-          <h3 className=" md:text-3xl font-bold md:text-left sm:text-center sm:text-xl">
+          <p className=" md:text-3xl font-bold md:text-left sm:text-center sm:text-xl">
             A Web Developer
-          </h3>
+          </p>
           <p className=" font-normal text-xl md:text-left sm:text-center sm:text-sm">
             Delivering innovative solutions with skills in
             <br /> React.js, Next.js, Firebase, Node.js, GitHub, and Git.
