@@ -63,10 +63,7 @@ function MobileCards({ title, img, set }: projectType) {
           <h1 className="text-lg uppercase font-extrabold ">
             {title + img + set}
           </h1>
-          <p>
-            asdasdasdasdasdasdas dasdasdasd asdas asd asd asd asd asd asd
-            aswqeascas sdas d asd asd as das d asd asdqwd das
-          </p>
+          <p>DAS</p>
         </div>
       </div>
     </>
