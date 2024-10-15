@@ -113,6 +113,7 @@ export default function Navbar() {
         <button
           className={` h-10 ${!navState ? "flex" : "hidden"} items-center px-4`}
           onClick={navOpen}
+          name="menubar"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
