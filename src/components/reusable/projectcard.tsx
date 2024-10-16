@@ -74,7 +74,7 @@ export default function ProjectsCard() {
   const project = [
     {
       title: "a",
-      img: "a",
+      img: "DD",
     },
     {
       title: "b",
