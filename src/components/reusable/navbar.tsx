@@ -5,15 +5,15 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import Icons from "@/app/img/gg.svg";
 const navitem = [
-  { name: "home", path: "#home" },
-  { name: "projects", path: "#projects" },
-  { name: "about", path: "#about" },
+  { name: "home", path: "/#home" },
+  { name: "projects", path: "/#projects" },
+  { name: "about", path: "/#about" },
   { name: "resume", path: "/resume" },
 ];
 
 export default function Navbar() {
   const currentpath = usePathname();
-  // const route = useRouter();
+
   const [navState, setnavState] = useState(false);
   function navClose() {
     setnavState(false);
